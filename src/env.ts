@@ -14,7 +14,7 @@ const schema = z.object({
   SUPABASE_ANON_KEY: z.string().min(1),
   SUPABASE_SERVICE_ROLE_KEY: z.string().min(1),
 
-  CORS_ORIGINS: z.string().default('http://localhost:3000,http://localhost:3001').transform(csv),
+  CORS_ORIGINS: z.string().default('http://localhost:3000,http://localhost:3001,http://localhost:3002,http://localhost:3003').transform(csv),
 
   /** Auth stub: acts as this user when a request carries no bearer token. */
   DEV_AUTH_USER_ID: z.string().uuid().optional().or(z.literal('').transform(() => undefined)),

@@ -157,7 +157,7 @@ of this API today. Two links, not one:
   `VITE_SUPABASE_URL` there.
 
 CORS is the gate: `CORS_ORIGINS` must list the frontend origins
-(`:3000` customer, `:3001` vendor).
+(`:3000` customer, `:3001` vendor, `:3002`/`:3003` customer forced mobile/desktop).
 
 **To `odys-vendor`** — not connected. The vendor app runs entirely on its own
 in-memory mock and expects a different contract. Bridging it means reconciling
